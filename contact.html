@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - EV Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #001f3f;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .contact-header {
+      background: url('https://images.unsplash.com/photo-1624111039330-e0fc9bdb5d35?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px #000;
+      margin-bottom: 10px;
+    }
+    .contact-form {
+      background-color: #fff;
+      color: #000;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      margin-top: 10px;
+    }
+    .btn-ev {
+      background-color: #001f3f;
+      color: white;
+    }
+    .btn-ev:hover {
+      background-color: #004080;
+    }
+    h1, h3, h4, h5 {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Back Button -->
+  <div style="background-color: #001f3f; padding: 10px;">
+    <a href="index.html" class="btn btn-light">← Back to Home</a>
+  </div>
+
+  <!-- Header Banner -->
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container my-1">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="contact-form">
+          <h3 class="mb-3">Send us your feedback</h3>
+          <form action="https://formspree.io/f/xjkowanr" method="POST">
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" class="form-control" required />
+  </div>
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" class="form-control" required />
+  </div>
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="4" class="form-control" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-ev btn-block">Submit</button>
+</form>
+
+        </div>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+        <h4>Contact Info</h4>
+        <p>📍 Location: Ashta, Maharashtra, India</p>
+        <p>📧 Email: support_123@gmail.com</p>
+        <p>📞 Phone: +91 9876565420</p>
+        <h5 class="mt-4">We're here to help you on the road to a greener future!</h5>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

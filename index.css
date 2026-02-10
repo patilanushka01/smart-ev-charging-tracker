@@ -1,0 +1,48 @@
+.about-us-section {
+  background-color: #001f3f;
+}
+
+.services-section .service-card i {
+  transition: transform 0.3s ease;
+}
+
+.services-section .service-card:hover i {
+  transform: scale(1.2);
+}
+.bg-dark-blue {
+  background-color: #001f3f;
+}
+
+.service-card {
+  background-color: #002b5c;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
+}
+
+.service-card .card-title {
+  font-weight: bold;
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+#stations ul li {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+#stations img {
+  transition: transform 0.3s ease;
+}
+
+#stations img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta charset="UTF-8" />
+  <title>EV Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- TomTom SDK CSS -->
+  <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/maps/maps.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    #map {
+      width: 100%;
+      height: 70vh;
+    }
+
+    .controls-box {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-ev {
+      background-color: #001f3f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      width: 100%;
+      text-transform: uppercase;
+    }
+
+    .btn-ev:hover {
+      background-color: #004080;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    .back-btn {
+      background-color: #001f3f;
+      color: white;
+      padding: 10px;
+      display: inline-block;
+      margin: 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- TomTom JS -->
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/maps/maps-web.min.js"></script>
+  <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.36.1/services/services-web.min.js"></script>
+  <script src="chargingAvailability.js"></script>
+</head>
+
+<body>
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+  <div class="container">
+    <!-- Search Controls -->
+    <div class="controls-box">
+      <h4 class="mb-3">Find EV Stations</h4>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" class="form-control" placeholder="Enter location">
+      </div>
+      <div class="form-group">
+        <label for="distance">Maximum Distance (km)</label>
+        <input type="number" id="distance" class="form-control" value="10">
+      </div>
+      <button class="btn btn-ev" onclick="findLocation()">Find Stations</button>
+    </div>
+
+    <!-- Map -->
+    <div id="map" class="map mb-5"></div>
+  </div>
+
+  <script src="ev_search.js"></script>
+</body>
+
+</html>
